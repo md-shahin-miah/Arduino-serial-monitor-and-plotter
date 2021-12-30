@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rubensousa:raiflatbutton:0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/ea92b7840f268d5885e8251a0562674c/jetified-raiflatbutton-0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/ea92b7840f268d5885e8251a0562674c/jetified-raiflatbutton-0.1/res" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/ea92b7840f268d5885e8251a0562674c/jetified-raiflatbutton-0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/3b4effecb92da075b1913ca342e9679b/jetified-raiflatbutton-0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/3b4effecb92da075b1913ca342e9679b/jetified-raiflatbutton-0.1/res" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/3b4effecb92da075b1913ca342e9679b/jetified-raiflatbutton-0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

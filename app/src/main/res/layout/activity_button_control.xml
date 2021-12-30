@@ -1,0 +1,2569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDBDB">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_layout_button_control"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/buttonsettings_text_general_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DCDBDB"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Button Settings"
+                android:textColor="#807B7B" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonsettings_text_general_id"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Button 1"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginLeft="7dp"
+                            android:layout_toRightOf="@+id/nametext11"
+
+                            android:hint="  Type button name here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc11">
+
+                        <TextView
+                            android:id="@+id/nametext12"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_btc_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext12"
+                            android:hint=" Type data here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_btc13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_btc12">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="Continuous "
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/continuous_et_btc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_btc1"
+                            android:hint=" Type time here"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_et_btc1"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/savebutton_btc_1"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_alignParentRight="true"-->
+                        <!--                            android:layout_alignParentBottom="true"-->
+                        <!--                            android:background="@color/colorSecondary"-->
+                        <!--                            android:text="save"-->
+                        <!--                            android:textColor="#FFFFFF" />-->
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_1"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/relative_btc13"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc13"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc1"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Button 2"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc21"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_toRightOf="@+id/nametext21"
+                            android:hint=" Type button name here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc21">
+
+                        <TextView
+                            android:id="@+id/nametext22"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_btc_22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext22"
+
+                            android:hint="  Type data here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_btc23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_btc22">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="Continuous "
+                            android:textColor="#683B3B"
+
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_et_btc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_btc2"
+                            android:hint=" Type time here "
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_et_btc2"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_2"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/relative_btc23"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc23"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Button 3"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc31"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext31"
+                            android:hint="  Type button name here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc31">
+
+                        <TextView
+                            android:id="@+id/nametext32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_btc_32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext32"
+                            android:hint="  Type data here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_btc33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_btc32">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="Continuous "
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_et_btc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_btc3"
+                            android:hint=" Type time here "
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_et_btc3"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_3"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/relative_btc33"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc33"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc3"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Button 4"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc41"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginLeft="7dp"
+                            android:layout_toRightOf="@+id/nametext41"
+                            android:hint=" Type button name here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc41">
+
+                        <TextView
+                            android:id="@+id/nametext42"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_btc_42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext42"
+                            android:hint=" Type data here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_btc43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_btc42">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btc4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="Continuous "
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_et_btc4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_btc4"
+
+                            android:hint=" Type time here "
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_et_btc4"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_4"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/relative_btc43"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+
+
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc43"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc4"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Button 5"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc51"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_toRightOf="@+id/nametext51"
+                            android:hint="  Type button name here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc51">
+
+                        <TextView
+                            android:id="@+id/nametext52"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_btc_52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext52"
+
+                            android:hint="  Type data here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_btc53"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_btc52">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btc5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="Continuous "
+                            android:textColor="#683B3B"
+
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_et_btc5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_btc5"
+                            android:hint=" Type time here "
+                            android:inputType="number" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_5"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/relative_btc53"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc53"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc5"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Button 6"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc61"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext61"
+                            android:hint="  Type button name here " />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_btc62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc61">
+
+                        <TextView
+                            android:id="@+id/nametext62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_btc_62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext62"
+                            android:hint="  Type data here " />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_btc63"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_btc62">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btc6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Continuous "
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_et_btc6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_btc6"
+                            android:hint="Time in milisecond"
+                            android:inputType="number" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_et_btc6"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_6"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/relative_btc63"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+
+
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_btc63"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/slidersettings_text_general_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_btc6"
+                android:background="#DCDBDB"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Slider Settings"
+                android:textColor="#807B7B" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slidersettings_text_general_id"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Slider 1"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext70"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc70"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext70"
+                            android:hint=" Type string here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/checkbox10">
+
+                        <TextView
+                            android:id="@+id/nametext71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc71"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext71"
+                            android:hint=" Type name here"
+
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox11">
+
+                        <TextView
+                            android:id="@+id/nametext72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Minimum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/start_number_et_btc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/nametext72"
+                            android:hint=" Type minimum number here"
+                            android:inputType="number" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox12">
+
+                        <TextView
+                            android:id="@+id/nametext73"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Maximum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/end_number_et_btc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/nametext73"
+                            android:hint="Type maximum number"
+                            android:inputType="number" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_7"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/checkbox13"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox13"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc7"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Slider 2"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext80"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc80"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext80"
+                            android:hint=" Type string here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/checkbox20">
+
+                        <TextView
+                            android:id="@+id/nametext81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc81"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext81"
+                            android:hint=" Type name here"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox21">
+
+                        <TextView
+                            android:id="@+id/nametext82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Minimum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/start_number_et_btc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/nametext82"
+                            android:hint=" Type minimum number here"
+                            android:inputType="number" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox22">
+
+                        <TextView
+                            android:id="@+id/nametext83"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Maximum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/end_number_et_btc2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/nametext83"
+                            android:hint=" Type maximum number"
+                            android:inputType="number" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_8"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/checkbox23"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox23"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc8"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Slider 3"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext90"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc90"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext90"
+                            android:hint=" Type string here" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox91"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/checkbox30">
+
+                        <TextView
+                            android:id="@+id/nametext91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc91"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext91"
+                            android:hint=" Type name here"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox91">
+
+                        <TextView
+                            android:id="@+id/nametext92"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Minimum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/start_number_et_btc3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/nametext92"
+                            android:hint=" Type minimum number here"
+                            android:inputType="number" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox32">
+
+                        <TextView
+                            android:id="@+id/nametext93"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Maximum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/end_number_et_btc3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/nametext93"
+                            android:hint=" Type maximum number"
+                            android:inputType="number" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_9"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/checkbox33"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox33"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc9"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Slider 4"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext100"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc100"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext100"
+                            android:hint=" Type string here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/checkbox40">
+
+                        <TextView
+                            android:id="@+id/nametext101"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc101"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext101"
+                            android:hint=" Type name here"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox41">
+
+                        <TextView
+                            android:id="@+id/nametext102"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Minimum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/start_number_et_btc4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/nametext102"
+                            android:hint=" Type minimum number here"
+                            android:inputType="number" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox43"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox42">
+
+
+                        <TextView
+                            android:id="@+id/nametext103"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Maximum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/end_number_et_btc4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/nametext103"
+                            android:hint=" Type maximum number"
+                            android:inputType="number" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_10"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/checkbox43"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox43"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/switchsettings_text_general_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_btc10"
+                android:background="#DCDBDB"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Switch Settings"
+                android:textColor="#807B7B" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switchsettings_text_general_id"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Switch 1"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext110"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc110"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext110"
+                            android:hint=" Type name here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button10">
+
+                        <TextView
+                            android:id="@+id/nametext111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc111"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext111"
+                            android:hint=" Type string here"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button11">
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btcC1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="Continuous "
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/name_et_btc112"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_check_btcC1"
+                            android:hint=" Type time here "
+                            android:inputType="number"
+                            android:paddingRight="5dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/name_et_btc112"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_11"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/switch_button12"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_button12"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc11"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Switch 2"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext120"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc120"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext120"
+                            android:hint=" Type name here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button20">
+
+                        <TextView
+                            android:id="@+id/nametext121"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc121"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext121"
+                            android:hint=" Type string here"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button21">
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btcC2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Continuous "
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc122"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_check_btcC2"
+                            android:hint=" type time here "
+                            android:inputType="number"
+                            android:paddingRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/name_et_btc122"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_12"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/switch_button22"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_button22"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc12"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Switch 3"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext130"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc130"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext130"
+                            android:hint=" Type name here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button30">
+
+                        <TextView
+                            android:id="@+id/nametext131"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc131"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext131"
+                            android:hint=" Type string here"
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button31">
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btcC3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Continuous "
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc132"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_check_btcC3"
+                            android:hint=" type time here "
+                            android:inputType="number"
+                            android:paddingRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/name_et_btc132"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_13"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/switch_button32"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_button32"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc13"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Switch 4"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext140"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc140"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext140"
+                            android:hint=" Type name here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button40">
+
+                        <TextView
+                            android:id="@+id/nametext141"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc141"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext141"
+                            android:hint=" Type string here"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button41">
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btcC4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="Continuous "
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc142"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_check_btcC4"
+                            android:hint=" Type time here "
+                            android:inputType="number"
+                            android:paddingRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/name_et_btc142"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_14"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/switch_button42"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_button42"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc14"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Switch 5"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext150"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc150"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext150"
+                            android:hint=" Type name here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button51"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button50">
+
+                        <TextView
+                            android:id="@+id/nametext151"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:paddingRight="5dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc151"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext151"
+                            android:hint=" Type string here"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button52"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button51">
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btcC5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Continuous "
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc152"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_check_btcC5"
+                            android:hint=" Type time here "
+                            android:inputType="number"
+                            android:paddingRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/name_et_btc152"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_15"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/switch_button52"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_button52"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_btc16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_btc15"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                app:cardCornerRadius="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Switch 6"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button60"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nametext160"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_btc160"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext160"
+                            android:hint=" Type string here" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button61"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button60">
+
+                        <TextView
+                            android:id="@+id/nametext161"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:paddingRight="5dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc161"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext161"
+                            android:hint=" Type name here "
+
+                            />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button61">
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_btcC6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="Continuous "
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_btc162"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_check_btcC6"
+                            android:hint=" Type time here "
+                            android:inputType="number"
+                            android:paddingRight="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/name_et_btc162"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+                    <!--                    <Button-->
+                    <!--                        android:id="@+id/savebutton_btc_16"-->
+                    <!--                        android:layout_width="wrap_content"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/switch_button62"-->
+                    <!--                        android:layout_alignParentRight="true"-->
+                    <!--                        android:layout_alignParentBottom="true"-->
+                    <!--                        android:background="@color/colorSecondary"-->
+                    <!--                        android:text="save"-->
+                    <!--                        android:textColor="#FFFFFF" />-->
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/savebutton_btc_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch_button62"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/cardview_btc16" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/ad_layout_button_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView_button_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            android:visibility="gone"
+            ads:adUnitId="@string/admob_banner_one"/>
+
+        <ImageView
+            android:id="@+id/imageview_Ads_jlcpcb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jlcpcb_banner" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

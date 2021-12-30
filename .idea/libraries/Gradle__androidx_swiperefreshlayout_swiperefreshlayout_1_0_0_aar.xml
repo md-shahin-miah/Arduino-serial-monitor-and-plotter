@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/4c5e3aeaf116355545ae439cda7140e3/swiperefreshlayout-1.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/4c5e3aeaf116355545ae439cda7140e3/swiperefreshlayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/4c5e3aeaf116355545ae439cda7140e3/swiperefreshlayout-1.0.0/res" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/4c5e3aeaf116355545ae439cda7140e3/swiperefreshlayout-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/modules-2/files-2.1/androidx.swiperefreshlayout/swiperefreshlayout/1.0.0/ab92d86c004eb1d48e45f311b02ca53d6c86b607/swiperefreshlayout-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tiagohm:CodeView:0.4.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/60b9b8a80a6c466995cda263e945b647/jetified-CodeView-0.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/60b9b8a80a6c466995cda263e945b647/jetified-CodeView-0.4.0/res" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/60b9b8a80a6c466995cda263e945b647/jetified-CodeView-0.4.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/modules-2/files-2.1/com.github.tiagohm/CodeView/0.4.0/6def85547c6fe813bc0ccd182236bcd528629e1/CodeView-0.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

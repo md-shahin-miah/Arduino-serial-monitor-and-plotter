@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.dakatso:livebutton:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/0338908c67499c582b8ca931dd0bbd84/jetified-livebutton-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/0338908c67499c582b8ca931dd0bbd84/jetified-livebutton-1.0.0/res" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/0338908c67499c582b8ca931dd0bbd84/jetified-livebutton-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/75b3611431a8502e19a1de8bc75140e5/jetified-livebutton-1.0.0/res" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/75b3611431a8502e19a1de8bc75140e5/jetified-livebutton-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/75b3611431a8502e19a1de8bc75140e5/jetified-livebutton-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/modules-2/files-2.1/com.github.dakatso/livebutton/1.0.0/683d911487cd13ddbe8cb3ac5e856d9e0c0a07b0/livebutton-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/modules-2/files-2.1/com.github.dakatso/livebutton/1.0.0/d5c8954109ec866df9248f22388c5485a042f479/livebutton-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

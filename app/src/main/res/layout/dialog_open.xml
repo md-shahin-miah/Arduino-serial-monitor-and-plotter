@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_400sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_centerHorizontal="true"
+            android:background="#FFF"
+            android:layout_centerVertical="true"
+         >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardElevation="@dimen/_6sdp">
+
+
+
+
+                <WebView
+                    android:id="@+id/web_view_Ad_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/skipid_open"
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:textSize="@dimen/_20sdp"
+                        android:background="@drawable/ic_close"
+                        />
+                <TextView
+                    android:id="@+id/skip_button_id_open"
+                    android:layout_gravity="right|bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:text="Skip"
+                    android:textColor="#FFFFFF"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:textSize="@dimen/_16sdp"
+                    android:background="@drawable/shape"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

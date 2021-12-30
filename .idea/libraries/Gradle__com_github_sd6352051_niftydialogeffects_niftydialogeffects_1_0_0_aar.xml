@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.sd6352051.niftydialogeffects:niftydialogeffects:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/523b4bf7ee38841fade1f05aa42bf8ee/jetified-niftydialogeffects-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/523b4bf7ee38841fade1f05aa42bf8ee/jetified-niftydialogeffects-1.0.0/res" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/caches/transforms-2/files-2.1/523b4bf7ee38841fade1f05aa42bf8ee/jetified-niftydialogeffects-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/modules-2/files-2.1/com.github.sd6352051.niftydialogeffects/niftydialogeffects/1.0.0/3c88be25eb0ebded41004975655c4522ff9f9f9d/niftydialogeffects-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/caches/modules-2/files-2.1/com.github.sd6352051.niftydialogeffects/niftydialogeffects/1.0.0/6e228d4ca42e703ee015783a6ba22194f0d8ddbd/niftydialogeffects-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

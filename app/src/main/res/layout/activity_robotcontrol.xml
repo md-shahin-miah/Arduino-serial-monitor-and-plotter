@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.Activity.RobotcontrolActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.6">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_online_status_green"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/green"
+                    android:visibility="gone" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_online_status_red"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/red"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+            <!--            <com.suke.widget.SwitchButton-->
+            <!--                android:id="@+id/switch_1_id_rc"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:layout_marginRight="5dp"-->
+            <!--                android:padding="15dp"-->
+            <!--                android:text="Switch "-->
+
+            <!--                android:textColor="#FFFFFF" />-->
+            <TextView
+                android:id="@+id/switchtext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="Switch One"
+                android:textColor="#FFFFFF" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/switch_1_id_rc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                app:colorBorder="#00c4a6"
+                app:colorOn="#F47836"
+                app:on="false"
+                app:textOff="OFF"
+                app:textOn="ON" />
+
+
+            <!--            <androidx.appcompat.widget.SwitchCompat-->
+            <!--                android:id="@+id/switch_2_id_rc"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+
+            <!--                android:layout_marginLeft="5dp"-->
+            <!--                android:layout_marginRight="5dp"-->
+            <!--                android:padding="15dp"-->
+            <!--                android:text="Switch "-->
+            <!--                android:textColor="#FFFFFF" />-->
+            <TextView
+                android:id="@+id/switchtext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:text="Switch Two"
+                android:textColor="#FFFFFF" />
+
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/switch_2_id_rc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                app:colorBorder="#00c4a6"
+                app:colorOn="#F47836"
+                app:on="false"
+                app:textOff="OFF"
+                app:textOn="ON" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/seekbar_1_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:maxHeight="8dp"
+                    android:minHeight="6dp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:progressDrawable="@drawable/seekbar_style1"
+                    android:thumb="@drawable/custom_thumb1" />
+
+                <TextView
+                    android:id="@+id/slidertextShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!--            <Slider-->
+            <!--                android:id="@+id/seekbar_1_rc"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:labelBehavior="withinBounds"-->
+            <!--                android:activeTrackColor="@color/primaryDarkColor"-->
+            <!--                android:inactiveTrackColor="@color/primaryLightColor"-->
+            <!--                android:thumbColor="@color/primaryDarkColor"-->
+            <!--                android:value="7"-->
+            <!--                android:valueFrom="0"-->
+            <!--                android:valueTo="10"-->
+            <!--            />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/refresh_RCA"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:clickable="true"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:drawableRight="@drawable/ic_baseline_refresh_24"-->
+            <!--                android:padding="15dp" />-->
+
+            <ImageView
+                android:id="@+id/settings_View_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_baseline_settings_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <ImageButton
+                    android:id="@+id/button_id_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorEditText"
+                    android:src="@drawable/uparr" />
+
+                <ImageButton
+                    android:id="@+id/button_id_down"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorEditText"
+                    android:src="@drawable/downarr" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/button_1_id_RC"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="2dp"-->
+                <!--                    android:background="@drawable/rounded_buttonrc"-->
+                <!--                    android:text="Button 1"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="#FFFFFF" />-->
+<!--                <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/button_1_id_RC"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="    Button1"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="@dimen/_16sdp"-->
+<!--                    livebutton:backgroundColor="@color/colorrobotbuttons"-->
+<!--                    livebutton:normalHeight="4dp"-->
+<!--                    livebutton:pressedHeight="1dp"-->
+<!--                    livebutton:shadowColor="#b16262" />-->
+
+
+                <Button
+                    android:id="@+id/button_2_id_RC"
+                    android:backgroundTint="@color/colorrobotbuttons"
+                    android:text="Button"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/button_1_id_RC"
+                    android:backgroundTint="@color/colorrobotbuttons"
+                    android:text="Button"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </Button>
+                <Button
+                    android:id="@+id/button_3_id_RC"
+                    android:backgroundTint="@color/colorrobotbuttons"
+                    android:text="Button"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                </Button>
+<!--                <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/button_2_id_RC"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="    Button2"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="@dimen/_16sdp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    livebutton:backgroundColor="#F47836"-->
+<!--                    livebutton:normalHeight="4dp"-->
+<!--                    livebutton:pressedHeight="1dp"-->
+<!--                    livebutton:shadowColor="#b16262" />-->
+
+<!--                <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/button_3_id_RC"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="    Button3"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:textSize="@dimen/_16sdp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    livebutton:backgroundColor="#F47836"-->
+<!--                    livebutton:normalHeight="4dp"-->
+<!--                    livebutton:pressedHeight="1dp"-->
+<!--                    livebutton:shadowColor="#b16262" />-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/button_2_id_RC"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="2dp"-->
+                <!--                    android:background="@drawable/rounded_buttonrc"-->
+                <!--                    android:text="Button 2"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="#FFFFFF" />-->
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/button_3_id_RC"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_margin="2dp"-->
+                <!--                    android:background="@drawable/rounded_buttonrc"-->
+                <!--                    android:text="button 3"-->
+                <!--                    android:textAllCaps="false"-->
+                <!--                    android:textColor="#FFFFFF" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_id_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorEditText"
+                    android:src="@drawable/leftarr" />
+
+                <ImageButton
+                    android:id="@+id/button_id_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorEditText"
+                    android:src="@drawable/rightarr" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6">
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/admob_banner_one" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

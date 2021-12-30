@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_340sdp"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+         >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_6sdp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_120sdp"
+                            android:background="@color/purple_800"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </ImageView>
+
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:gravity="center"
+
+                            android:padding="@dimen/_5sdp"
+                            android:text="Dear User"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_16sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+                        <!--                        <com.google.android.material.button.MaterialButton-->
+<!--                            android:id="@+id/buttonCancel"-->
+<!--                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:layout_marginEnd="8dp"-->
+<!--                            android:layout_marginBottom="32dp"-->
+<!--                            android:fontFamily="@font/poppins_medium"-->
+<!--                            android:gravity="center"-->
+<!--                            android:paddingTop="@dimen/_8sdp"-->
+<!--                            android:paddingBottom="@dimen/_6sdp"-->
+<!--                            android:text="NO"-->
+<!--                            android:textColor="@color/colorPrimaryDark"-->
+
+<!--                            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                            app:layout_constraintEnd_toStartOf="@+id/buttonExit"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:strokeColor="@color/colorPrimaryDark" />-->
+
+                        <Button
+                            android:id="@+id/buttonOk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="32dp"
+                            android:backgroundTint="@color/purple_800"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingTop="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_6sdp"
+                            android:text="   OK    "
+
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="You have removed all ads and unlocked all premium features. Thanks for your support."
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_100sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/imageView17"
+                            app:layout_constraintTop_toTopOf="@+id/imageView17"
+
+                            android:src="@drawable/congo"
+                            tools:ignore="VectorDrawableCompat" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+
+        </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

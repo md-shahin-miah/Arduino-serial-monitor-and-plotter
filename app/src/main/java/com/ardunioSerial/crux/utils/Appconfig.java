@@ -1,0 +1,7 @@
+package com.ardunioSerial.crux.utils;
+
+public class Appconfig {
+
+    public static final String LICENCE_KEY = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv6yeu6VzaHRt3AgHjuLVCYKOrcXQ5GeSlGzlCbHWx1Ix/7gZz+YZuw5yUBwp91i95UVQ6izxGvXNBBZ00Tu+IlntniMwF7dEnUWBUb0quElxPd4L9zVpQIx6LGhKQzHQccAEWKOAsr8CXMRrSqxwkYJRhjgisBwPVfGkQdoRw+XXCFWY6KX9ODOA6858Nbu4NxNvHMdeDOSLYmvLkoGLC6Gp90yciBfjVtSaFjWNNx75LIDqTbXfPLj45zOxSud8reX09n6kZ8xf9PwdEzXBRUsiGfUcBxwBvtEE6YNAnEqa0OI1FlzKop9t2fjYZHAyHn86OtB6E2gvXEJ7GOXoBQIDAQAB";
+    public static final String PRODUCT_KEY = "serial_monitor";
+}

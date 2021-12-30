@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDBDB"
+    tools:context=".ui.Activity.RobotSettingsActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_rclast_ad">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/buttonsettings_text_general_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolbar"
+                android:background="#DCDBDB"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="General Settings"
+                android:textColor="#807B7B" />
+
+            <RelativeLayout
+                android:id="@+id/relative_release_string"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonsettings_text_general_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/shapebackground2">
+
+                <CheckBox
+                    android:id="@+id/checbox_release_string"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimaryDark"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Do you want to set a button release string?" />
+
+                <TextView
+                    android:id="@+id/textview_rl_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checbox_release_string"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="String"
+                    android:textStyle="bold"
+                    android:textColor="#683B3B"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittext_release"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/checbox_release_string"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/textview_rl_str"
+                    android:hint="Type string here..." />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_G1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_release_string"
+                android:layout_marginTop="5dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Forward "
+                        android:textColor="#FFFFFF" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative_G1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview10">
+
+                        <TextView
+                            android:id="@+id/nametext11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext11"
+                            android:hint=" Type data here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_G2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_G1">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="Continuous"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_time_et_G1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_G1"
+                            android:hint="time in milisecond"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_time_et_G1"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_G2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_G1"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Backward "
+                        android:textColor="#FFFFFF" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative_G21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview20">
+
+                        <TextView
+                            android:id="@+id/nametext21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext21"
+                            android:hint=" Type data here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_G22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_G21">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Continuous"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_time_et_G2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_G2"
+                            android:hint="time in milisecond"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_time_et_G2"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_G3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_G2"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Turn left"
+                        android:textColor="#FFFFFF" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/relative_G31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview30">
+
+                        <TextView
+                            android:id="@+id/nametext31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_G3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext31"
+                            android:hint=" Type data here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_G32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_G31">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_G3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Continuous"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_time_et_G3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_G3"
+                            android:hint="time in milisecond"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_time_et_G3"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_G4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_G3"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Turn right"
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_G41"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview41"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_G4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginLeft="7dp"
+                            android:layout_toRightOf="@+id/nametext41"
+
+                            android:hint="  Type button name here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_G42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_G41">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_G4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="Continuous"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_time_et_G4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_G4"
+                            android:hint="time in milisecond"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_time_et_G4"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/buttonsettings_text_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_G4"
+                android:background="#DCDBDB"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Button Settings"
+                android:textColor="#807B7B" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_Rc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonsettings_text_id"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Button 1  "
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_Rc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textview5"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_Rc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginLeft="7dp"
+                            android:layout_toRightOf="@+id/nametext51"
+
+                            android:hint="  Type button name here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_Rc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_Rc1">
+
+                        <TextView
+                            android:id="@+id/nametext12"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_Rc1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext12"
+                            android:hint=" Type data here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_Rc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_Rc2">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_RC1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Continuous"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_time_et_RC1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_RC1"
+                            android:hint="time in milisecond"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_time_et_RC1"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_Rc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_Rc1"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Button 2  "
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_Rc21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview6"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_Rc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginLeft="7dp"
+                            android:layout_toRightOf="@+id/nametext61"
+
+                            android:hint="  Type button name here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_Rc62"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_Rc21">
+
+                        <TextView
+                            android:id="@+id/nametext22"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_Rc2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext22"
+                            android:hint=" Type data here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_Rc23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_Rc62">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_RC2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="Continuous"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_time_et_RC2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_RC2"
+                            android:hint="time in milisecond"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_time_et_RC2"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_Rc3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_Rc2"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Button 3  "
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/relative_Rc31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview7"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/nametext71"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Button name"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_Rc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginLeft="7dp"
+                            android:layout_toRightOf="@+id/nametext71"
+
+                            android:hint="  Type button name here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_Rc32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_Rc31">
+
+                        <TextView
+                            android:id="@+id/nametext32"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/data_et_Rc3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_toRightOf="@+id/nametext32"
+                            android:hint=" Type data here "
+                            android:textStyle="italic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:id="@+id/relative_Rc33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relative_Rc32">
+
+
+                        <CheckBox
+                            android:id="@+id/continuous_check_RC3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="Continuous"
+                            android:textColor="#683B3B"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+
+                            android:id="@+id/continuous_time_et_RC3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/continuous_check_RC3"
+                            android:hint="time in milisecond"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/continuous_time_et_RC3"
+                            android:padding="10dp"
+                            android:text="(ms)"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/switchsettings_text_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_Rc3"
+                android:background="#DCDBDB"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Switch Settings"
+                android:textColor="#807B7B" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_Rc4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switchsettings_text_id"
+                android:layout_marginBottom="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview_switch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Switch 1  "
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview_switch2">
+
+                        <TextView
+                            android:id="@+id/nametext110"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_RCT1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext110"
+                            android:hint=" type name here"
+                            android:textStyle="italic" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button10">
+
+                        <TextView
+                            android:id="@+id/nametext111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_RCT1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext111"
+                            android:hint=" type name here"
+                            android:textStyle="italic"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <!--                    <RelativeLayout-->
+                    <!--                        android:id="@+id/switch_button12"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@id/switch_button11">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/nametext112"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:padding="10dp"-->
+                    <!--                            android:text="Time"-->
+                    <!--                            android:textColor="@color/textcolorbtc"-->
+                    <!--                            android:textSize="16sp"-->
+                    <!--                            android:textStyle="bold" />-->
+
+                    <!--                        <EditText-->
+                    <!--                            android:id="@+id/time_et_RCT1"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_toRightOf="@+id/nametext112"-->
+                    <!--                            android:hint=" type name here"-->
+                    <!--                            android:inputType="number"-->
+                    <!--                            android:paddingRight="5dp"-->
+                    <!--                            android:textStyle="italic"-->
+
+                    <!--                            />-->
+
+
+                    <!--                    </RelativeLayout>-->
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_Rc5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview_Rc4"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textview_switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Switch 2  "
+                        android:textColor="#FFFFFF" />
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textview_switch1">
+
+                        <TextView
+                            android:id="@+id/nametext120"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Name"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/name_et_RCT2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@+id/nametext120"
+                            android:hint=" type name here"
+                            android:textStyle="italic" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/switch_button21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switch_button20">
+
+                        <TextView
+                            android:id="@+id/nametext121"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_et_RCT2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nametext121"
+                            android:hint=" type name here"
+                            android:textStyle="italic"
+
+                            />
+
+                    </RelativeLayout>
+
+                    <!--                    <RelativeLayout-->
+                    <!--                        android:id="@+id/switch_button22"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@id/switch_button21">-->
+
+                    <!--                        <TextView-->
+                    <!--                            android:id="@+id/nametext122"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:padding="10dp"-->
+                    <!--                            android:text="Time"-->
+                    <!--                            android:textColor="@color/textcolorbtc"-->
+                    <!--                            android:textSize="16sp"-->
+                    <!--                            android:textStyle="bold" />-->
+
+                    <!--                        <EditText-->
+                    <!--                            android:id="@+id/time_et_RCT2"-->
+                    <!--                            android:layout_width="wrap_content"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:layout_toRightOf="@+id/nametext122"-->
+                    <!--                            android:hint=" type name here"-->
+                    <!--                            android:inputType="number"-->
+                    <!--                            android:paddingRight="5dp"-->
+                    <!--                            android:textStyle="italic" />-->
+
+
+                    <!--                    </RelativeLayout>-->
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/slidersettings_text_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview_Rc5"
+                android:background="#DCDBDB"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="Slider Settings"
+                android:textColor="#807B7B" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_Rc6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/slidersettings_text_id"
+                android:layout_marginBottom="75dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textviewslider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/colorPrimary"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text=" Slider  "
+                        android:textColor="#FFFFFF" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textviewslider">
+
+                        <TextView
+                            android:id="@+id/nametext72"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Minimum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/min_number_et_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/nametext72"
+                            android:hint=" type minimum number here"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox12">
+
+                        <TextView
+                            android:id="@+id/nametext73"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="Maximum"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/max_number_et_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/nametext73"
+                            android:hint="type maximum number"
+                            android:inputType="number"
+                            android:textStyle="italic" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/checkbox14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkbox13">
+
+                        <TextView
+                            android:id="@+id/nametext74"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="String"
+                            android:textColor="@color/textcolorbtc"
+                            android:textSize="16sp"
+
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/string_number_et_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_toRightOf="@+id/nametext74"
+                            android:hint="type String here"
+                            android:textStyle="italic" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/save_RC_button_ID"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_above="@+id/relative_rclast_ad"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        android:layout_marginBottom="5dp"-->
+    <!--        android:background="@drawable/rounded_button"-->
+    <!--        android:text="Save"-->
+
+    <!--        android:textColor="#FFFFFF" />-->
+    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/save_RC_button_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relative_rclast_ad"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:text="    save"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        livebutton:corners="4dp"
+        livebutton:backgroundColor="#F57F76"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="1dp"
+        livebutton:shadowColor="#b16262" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_rclast_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView_robot_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/admob_banner_one"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

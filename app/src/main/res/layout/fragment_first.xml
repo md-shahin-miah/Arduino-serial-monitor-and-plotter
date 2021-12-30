@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_txt_send"
+        android:layout_marginBottom="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:id="@+id/graph_view_layout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/realtive_parent_gp_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_text_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F4E7E7"
+                        android:padding="5dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:id="@+id/expanbale_gp_control1_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+
+                            android:drawableLeft="@drawable/ic_baseline_expand_more_24"
+                            android:text="Show/hide"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textdetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:paddingLeft="30dp"
+                            android:text="Graph" />
+
+                        <TextView
+                            android:id="@+id/editable_gp1_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:drawableRight="@drawable/ic_baseline_edit_24"
+                            android:paddingLeft="30dp" />
+
+                    </RelativeLayout>
+
+
+                    <!--                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+                    <!--                        android:id="@+id/expandableLayout_Gp1_id"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_below="@+id/relative_text_holder"-->
+                    <!--                        app:ael_duration="300"-->
+                    <!--                        app:ael_expanded="false"-->
+                    <!--                        app:ael_interpolator="accelerate"-->
+                    <!--                        app:ael_orientation="vertical"-->
+
+                    <!--                        >-->
+                    <!--                        -->
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandableLayout_Gp1_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_text_holder"
+                        app:el_duration="300"
+                        app:el_expanded="true"
+                        app:el_parallax="0.5">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/linechart1_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_margin="5dp" />
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                    <!--                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/expandable_button_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/graph_view_layout_id">
+
+                <RelativeLayout
+                    android:id="@+id/relative_expnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4E7E7"
+                    android:padding="5dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/expanbale_gp_control3_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/ic_baseline_expand_more_24"
+                        android:text="Show/hide"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textdetailsbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:clickable="true"
+                        android:paddingLeft="30dp"
+                        android:text="Button/Slider/Switch" />
+
+                    <TextView
+                        android:id="@+id/editable_button_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawableRight="@drawable/ic_baseline_edit_24"
+
+                        android:paddingLeft="30dp" />
+                </RelativeLayout>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandableLayout_Gp2_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_expnd"
+                    app:el_duration="300"
+                    app:el_expanded="true"
+                    app:el_parallax="0.5">
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayout_Gp3_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+<!--                            <Button-->
+<!--                                android:id="@+id/button_1_id"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="@dimen/_50sdp"-->
+<!--                                android:layout_alignParentLeft="true"-->
+<!--                                android:layout_margin="2dp"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@color/colorPrimaryDark"-->
+<!--                                android:text="A1"-->
+<!--                                 />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/button_2_id"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="@dimen/_50sdp"-->
+<!--                                android:layout_margin="2dp"-->
+<!--                                android:layout_toRightOf="@id/button_1_id"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:text="A2"-->
+<!--                                android:background="@color/colorPrimaryDark"-->
+<!--                               />-->
+
+<!--                            <Button-->
+<!--                                android:id="@+id/button_3_id"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="@dimen/_50sdp"-->
+<!--                                android:layout_margin="2dp"-->
+<!--                                android:layout_toRightOf="@id/button_2_id"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:background="@color/colorPrimaryDark"-->
+<!--                             android:text="A3"-->
+<!--                              />-->
+
+                            <Button
+                                android:id="@+id/button_1_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A1"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/button_2_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:padding="@dimen/_10sdp"
+
+                                android:layout_toRightOf="@id/button_1_id"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A2"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/button_3_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_toRightOf="@id/button_2_id"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A3"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout1"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp">
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="Switch 1 "
+                                android:theme="@style/SwitchCompatTheme" />
+
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:text="Switch 2 "
+                                android:theme="@style/SwitchCompatTheme" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout3"
+                            android:padding="5dp">
+
+                            <SeekBar
+                                android:id="@+id/seekbar_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:maxHeight="8dp"
+                                android:minHeight="6dp"
+                                android:padding="5dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/custom_thumb" />
+
+                            <TextView
+                                android:id="@+id/slider_name_text_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:padding="5dp"
+                                android:text="Slider name" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_id"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/expandable_button_layout"
+                android:background="#473F3F" />
+
+            <TextView
+                android:id="@+id/setings_serial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/expandable_button_layout"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/ic_baseline_settings_241"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linear_txt_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ad_1stfragment_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_txt_send"
+            android:layout_alignParentBottom="true">
+
+<!--            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--                android:id="@+id/adView_1stfragment"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                ads:adSize="SMART_BANNER"-->
+<!--                ads:adUnitId="@string/admob_banner_one" />-->
+
+            <ImageView
+                android:id="@+id/imageview_ad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pcbx728x90x01"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <EditText
+                android:id="@+id/send_message_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext_register_login"
+                android:hint="    Type here..."
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/editexthints"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/message_send_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="5"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_baseline_send_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

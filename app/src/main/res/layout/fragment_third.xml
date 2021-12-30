@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_txt_send_3rd"
+        android:layout_marginBottom="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:id="@+id/graph_view_layout_id_3rd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/realtive_parent_gp_1_3rd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_text_holder_3rd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F4E7E7"
+                        android:padding="5dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:id="@+id/expanbale_gp_control1_id_3rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/ic_baseline_expand_more_24"
+                            android:text="Show/hide"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:id="@+id/textdetailsgrp3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Graph One"
+                            android:clickable="true"
+                            android:paddingLeft="30dp" />
+
+                        <TextView
+                            android:id="@+id/editable_gp1_ida_3rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:paddingLeft="30dp"
+                            android:drawableRight="@drawable/ic_baseline_edit_24" />
+
+                    </RelativeLayout>
+
+
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandableLayout_Gp1_id_3rd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_text_holder_3rd"
+                        app:el_duration="300"
+                        app:el_expanded="true"
+                        app:el_parallax="0.5">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/linechart1_id_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_margin="5dp" />
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/relative_2nd_graph_3rd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_text_holder1_3rd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F4E7E7"
+                        android:padding="5dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:id="@+id/expanbale_gp_control2_id_3rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/ic_baseline_expand_more_24"
+                            android:text="Show/hide"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:id="@+id/textdetailsgrp32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Graph Two"
+
+                            android:clickable="true"
+                            android:paddingLeft="30dp" />
+
+                        <TextView
+                            android:id="@+id/editable_gp2_id_3rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:paddingLeft="30dp"
+                            android:drawableRight="@drawable/ic_baseline_edit_24" />
+
+                    </RelativeLayout>
+
+
+<!--                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+<!--                        android:id="@+id/expandableLayout_Gp2_id_3rd"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_below="@+id/relative_text_holder1_3rd"-->
+<!--                        app:ael_duration="300"-->
+<!--                        app:ael_expanded="false"-->
+<!--                        app:ael_interpolator="accelerate"-->
+<!--                        app:ael_orientation="vertical">-->
+
+<!--                        <com.github.mikephil.charting.charts.LineChart-->
+<!--                            android:id="@+id/linechart2_id_3rd"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="220dp"-->
+<!--                            android:layout_margin="5dp"-->
+<!--                            />-->
+
+<!--                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandableLayout_Gp2_id_3rd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_text_holder1_3rd"
+                        app:el_duration="300"
+                        app:el_expanded="true"
+                        app:el_parallax="0.5">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/linechart2_id_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_margin="5dp" />
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relative_3rd_graph_3rd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_text_holder2_3rd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F4E7E7"
+                        android:padding="5dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+
+                            android:id="@+id/expanbale_gp_control3_id_3rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/ic_baseline_expand_more_24"
+                            android:text="Show/hide"
+                            android:textSize="14sp" />
+                        <TextView
+                            android:id="@+id/textdetailsgrp33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Graph Three"
+                            android:clickable="true"
+                            android:paddingLeft="30dp" />
+
+                        <TextView
+                            android:id="@+id/editable_gp3_id_3rd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:clickable="true"
+                            android:paddingLeft="30dp"
+                            android:drawableRight="@drawable/ic_baseline_edit_24" />
+
+                    </RelativeLayout>
+
+
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandableLayout_Gp3_id_3rd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_text_holder2_3rd"
+                        app:el_duration="300"
+                        app:el_expanded="true"
+                        app:el_parallax="0.5">
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/linechart3_id_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_margin="5dp" />
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/expandable_button_layout_3rd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/graph_view_layout_id_3rd">
+
+                <RelativeLayout
+                    android:id="@+id/relative_expnd_3rd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F4E7E7"
+                    android:padding="5dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/expanbale_gp_control4_id_3rd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/ic_baseline_expand_more_24"
+                        android:text="Show/hide"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/textdetailsbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Button/Slider/Switch"
+                        android:clickable="true"
+                        android:paddingLeft="30dp" />
+
+                    <TextView
+                        android:id="@+id/editable_button_textview_3rd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingLeft="30dp"
+                        android:drawableRight="@drawable/ic_baseline_edit_24" />
+                </RelativeLayout>
+
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandableLayout_Gp4_id_3rd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_expnd_3rd"
+                    app:el_duration="300"
+                    app:el_expanded="true"
+                    app:el_parallax="0.5">
+                    <RelativeLayout
+                        android:id="@+id/expandableLayout_Gp44_id_3rd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout1_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           >
+
+                            <Button
+                                android:id="@+id/button_1_id_3rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:padding="@dimen/_10sdp"
+                                android:background="@drawable/rounded_button"
+                                android:clickable="true"
+                                android:text="A1"
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/button_2_id_3rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_toRightOf="@id/button_1_id_3rd"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A2"
+                                android:padding="@dimen/_10sdp"
+
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/button_3_id_3rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_toRightOf="@id/button_2_id_3rd"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A3"
+                                android:padding="@dimen/_10sdp"
+
+                                android:textColor="#FFFFFF"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout2_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/linearbuttonlayout1_3rd"
+                            android:layout_height="wrap_content"
+
+                            android:weightSum="3">
+
+                            <Button
+                                android:id="@+id/button_4_id_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A4"
+                                android:padding="@dimen/_10sdp"
+
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <Button
+                                android:id="@+id/button_5_id_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A5"
+                                android:padding="@dimen/_10sdp"
+
+                                android:textColor="#FFFFFF"
+                                />
+
+                            <Button
+                                android:id="@+id/button_6_id_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/rounded_button"
+                                android:text="A6"
+                                android:padding="@dimen/_10sdp"
+
+                                android:textColor="#FFFFFF"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout3_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout2_3rd"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp">
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_1_3rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+                                android:text="Switch 1 "
+                                android:theme="@style/SwitchCompatTheme" />
+
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_2_3rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+
+                                android:text="Switch 2 "
+                                android:theme="@style/SwitchCompatTheme" />
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_3_3rd"
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Switch 3 "
+                                android:theme="@style/SwitchCompatTheme" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout4_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout3_3rd"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp">
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_4_3rd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Switch 4 "
+                                android:padding="5dp"
+                                android:layout_weight="1"
+
+                                android:theme="@style/SwitchCompatTheme" />
+
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_5_3rd"
+                                android:layout_width="wrap_content"
+                                android:padding="5dp"
+                                android:layout_weight="1"
+
+                                android:layout_height="wrap_content"
+                                android:text="Switch 5 "
+                                android:theme="@style/SwitchCompatTheme" />
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_id_6_3rd"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="Switch 6 "
+                                android:theme="@style/SwitchCompatTheme" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout5_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout4_3rd"
+                            android:padding="5dp">
+
+                            <SeekBar
+                                android:id="@+id/seekbar_1_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:maxHeight="8dp"
+                                android:minHeight="6dp"
+                                android:padding="5dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/custom_thumb" />
+                            <SeekBar
+                                android:id="@+id/seekbar_2_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:maxHeight="8dp"
+                                android:minHeight="6dp"
+                                android:padding="5dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/custom_thumb" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout6_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout5_3rd"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/slider_name1_text_id_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="10dp"
+                                android:text="Slider name" />
+
+                            <TextView
+                                android:id="@+id/slider_name2_text_id_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="10dp"
+                                android:text="Slider name" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout7_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout6_3rd"
+                            android:padding="5dp">
+
+                            <SeekBar
+                                android:id="@+id/seekbar_3_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:maxHeight="8dp"
+                                android:minHeight="6dp"
+                                android:padding="5dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/custom_thumb" />
+                            <SeekBar
+                                android:id="@+id/seekbar_4_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:maxHeight="8dp"
+                                android:minHeight="6dp"
+                                android:padding="5dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/custom_thumb" />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearbuttonlayout8_3rd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linearbuttonlayout7_3rd"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/slider_name3_text_id_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="10dp"
+                                android:text="Slider name" />
+
+                            <TextView
+                                android:id="@+id/slider_name4_text_id_3rd"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="10dp"
+                                android:text="Slider name" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_id_3rd"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@id/expandable_button_layout_3rd"
+                android:background="#473F3F" />
+            <TextView
+                android:id="@+id/setings_serial_3"
+                android:background="@drawable/ic_baseline_settings_241"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_below="@+id/expandable_button_layout_3rd"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linear_txt_send_3rd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <EditText
+            android:id="@+id/send_message_edittext_3rd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext_register_login"
+            android:hint="   Type here..."
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/editexthints"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/message_send_button_3rd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="5"
+            android:background="@drawable/rounded_button"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_baseline_send_24" />
+    </LinearLayout>
+
+
+</RelativeLayout>
