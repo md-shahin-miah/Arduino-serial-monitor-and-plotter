@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">Arduino Serial Monitor &amp; Plotter</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="show_paired_device">Show Paired Device</string>
+    <string name="search_for_device">Search for device</string>
+    <string name="text_pair">Pair</string>
+    <string name="bt_condition_text_on">Bluetooth is on</string>
+    <string name="bt_condition_text_off">Bluetooth is off</string>
+    <string name="bt_switch">On/Off</string>
+    <string name="ok">Sure</string>
+    <string name="cancel">Cancel</string>
+    <string name="text_view_paired">Paired Devices</string>
+    <string name="text_scan_devices">Scan Devices</string>
+    <string name="text_stop_scan">Scan Devices</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e.g">void setup() { \n
+  // initialize serial communication at 9600 bits per second:\n
+  Serial.begin(115000);\n
+}\n
+
+// the loop routine runs over and over again forever:\n
+void loop() {\n
+  // read the input on analog pin 0:\n
+  int sensorValue = analogRead(A3);\n
+  int sensorValue1 = analogRead(A4);\n
+  Serial.print("x:");\n
+  Serial.print(sensorValue);\n
+  Serial.print(" y:");\n
+  Serial.println(sensorValue1);\n
+  delay(100);// delay in between reads for stability\n
+}
+    </string>
+
+
+    <string name="fragment1_code">
+/* Download "Serial Arduino Terminal"App\n
+   https://play.google.com/store/apps/developer?id=CRUX\n
+   https://www.cruxbd.com\n
+
+   Code for Arduino Mega written by Syed Razwanul Haque(Nabil)\n
+   Bluetooth Module connected with 2nd Hardware Serial(Serial1)\n
+   HC05 to Arduino Connection\n
+   (VCC->Arduino 5V,GND->Arduino GND,Tx->Arduino RX1,Rx->Arduino TX1)\n
+   You should use Software Serial for Arduino UNO or Similar Boards\n
+
+   Send 1 to Arduino from App to Turn On LED and send 0 to Turn Off\n
+   Please Be careful about any extra space\n
+*/\n
+
+uint8_t ledPin = 13;\n
+String mode;\n
+String getFrame;\n
+
+void setup() {\n
+ pinMode(ledPin, OUTPUT);\n
+ Serial.begin(115200); //Computer Serial Monitor if Needed\n
+ Serial1.begin(115200);//Bluetooth Module(App Serial)\n
+}\n
+
+void loop() {\n
+ if (Serial1.available() > 0) {\n
+  getFrame = Serial1.readString();\n
+  Serial1.println(getFrame); //print to Bluetooth Terminal\n
+  Serial.println(getFrame); //print to Computer Serial Monitor\n
+  mode = getFrame.substring(0, 1);\n
+ }\n
+
+ if (Serial.available() > 0) {\n
+  Serial1.println(Serial.readString());\n
+  }\n
+/***GRAPH 1 PLOT*****/\n
+ int analogValue1 = analogRead(A0);\n
+ Serial1.print("x:"); //Start String is x: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue1);\n
+ delay(50);\n
+ if (mode == "1") {\n
+  digitalWrite(ledPin, HIGH);\n
+ }\n
+
+ if (mode == "0") {\n
+  digitalWrite(ledPin, LOW);\n
+ }\n
+  delay(50);\n
+}\n
+    </string>
+
+
+    <string name="fragment2_code">
+
+/* Download "Serial Arduino Terminal"App\n
+   https://play.google.com/store/apps/developer?id=CRUX\n
+   https://www.cruxbd.com\n
+
+   Code for Arduino Mega written by Syed Razwanul Haque(Nabil)\n
+   Bluetooth Module connected with 2nd Hardware Serial(Serial1)\n
+   HC05 to Arduino Connection\n
+   (VCC->Arduino 5V,GND->Arduino GND,Tx->Arduino RX1,Rx->Arduino TX1)\n
+   You should use Software Serial for Arduino UNO or Similar Boards\n
+
+   Send 1 to Arduino from App to Turn On LED and send 0 to Turn Off\n
+   Please Be careful about any extra space\n
+*/\n
+
+uint8_t ledPin = 13;\n
+String mode;\n
+String getFrame;\n
+
+void setup() {\n
+ pinMode(ledPin, OUTPUT);\n
+ Serial.begin(115200); //Computer Serial Monitor if Needed\n
+ Serial1.begin(115200);//Bluetooth Module(App Serial)\n
+}\n
+
+void loop() {\n
+ if (Serial1.available() > 0) {\n
+  getFrame = Serial1.readString();\n
+  Serial1.println(getFrame); //print to Bluetooth Terminal\n
+  Serial.println(getFrame); //print to Computer Serial Monitor\n
+  mode = getFrame.substring(0, 1);\n
+ }\n
+
+ if (Serial.available() > 0) {\n
+  Serial1.println(Serial.readString());\n
+  }\n
+/***GRAPH 1 and 2 PLOT*****/\n
+ int analogValue1 = analogRead(A0);\n
+ int analogValue2 = analogRead(A1);\n
+
+ Serial1.print("x:"); //Start String is x: Type exactly in Graph Settings without Space\n
+ Serial1.print(analogValue1);\n
+ Serial1.print("y:");//Start String is y: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue2);\n
+ delay(50); //use more delay for see your graph properly.\n
+ /*** Alternative Approach\n
+ Serial1.print("x:"); //Start String is x: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue1);\n
+        delay(50); //use more delay for see your graph properly.\n
+ Serial1.print("y:");//Start String is y: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue2);\n
+        delay(50); //use more delay for see your graph properly.\n
+ */\n
+ if (mode == "1") {\n
+  digitalWrite(ledPin, HIGH);\n
+ }\n
+
+ if (mode == "0") {\n
+  digitalWrite(ledPin, LOW);\n
+ }\n
+  delay(50);\n
+}\n
+    </string>
+
+
+    <string name="fragment3_code">
+/* Download "Serial Arduino Terminal"App\n
+   https://play.google.com/store/apps/developer?id=CRUX\n
+   https://www.cruxbd.com\n
+
+   Code for Arduino Mega written by Syed Razwanul Haque(Nabil)\n
+   Bluetooth Module connected with 2nd Hardware Serial(Serial1)\n
+   HC05 to Arduino Connection\n
+   (VCC->Arduino 5V,GND->Arduino GND,Tx->Arduino RX1,Rx->Arduino TX1)\n
+   You should use Software Serial for Arduino UNO or Similar Boards\n
+
+   Send 1 to Arduino from App to Turn On LED and send 0 to Turn Off\n
+   Please Be careful about any extra space\n
+*/\n
+
+uint8_t ledPin = 13;\n
+String mode;\n
+String getFrame;\n
+
+void setup() {\n
+ pinMode(ledPin, OUTPUT);\n
+ Serial.begin(115200); //Computer Serial Monitor if Needed\n
+ Serial1.begin(115200);//Bluetooth Module(App Serial)\n
+}\n
+
+void loop() {\n
+ if (Serial1.available() > 0) {\n
+  getFrame = Serial1.readString();\n
+  Serial1.println(getFrame); //print to Bluetooth Terminal\n
+  Serial.println(getFrame); //print to Computer Serial Monitor\n
+  mode = getFrame.substring(0, 1);\n
+ }\n
+
+ if (Serial.available() > 0) {\n
+  Serial1.println(Serial.readString());\n
+  }\n
+/***GRAPH 1 and 2 PLOT*****/\n
+ int analogValue1 = analogRead(A0);\n
+ int analogValue2 = analogRead(A1);\n
+ int analogValue3 = analogRead(A2);\n
+
+ Serial1.print("x:"); //Start String is x: Type exactly in Graph Settings without Space\n
+ Serial1.print(analogValue1);\n
+ Serial1.print("y:");//Start String is y: Type exactly in Graph Settings without Space\n
+ Serial1.print(analogValue2);\n
+ Serial1.print("z:");//Start String is z: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue3);\n
+        delay(50); //use more delay for see your graph properly.\n
+ /*** Alternative Approach\n
+ Serial1.print("x:"); //Start String is x: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue1);\n
+         delay(50); //use more delay for see your graph properly.\n
+ Serial1.print("y:");//Start String is y: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue2);\n
+         delay(50); //use more delay for see your graph properly.\n
+ Serial1.print("z:");//Start String is z: Type exactly in Graph Settings without Space\n
+ Serial1.println(analogValue3);\n
+         delay(50); //use more delay for see your graph properly.\n
+ */\n
+ if (mode == "1") {\n
+  digitalWrite(ledPin, HIGH);\n
+ }\n
+
+ if (mode == "0") {\n
+  digitalWrite(ledPin, LOW);\n
+ }\n
+  delay(50);\n
+}\n
+    </string>
+
+    <string name="fragment1_instruction">
+> Only one graph can be plotted here.\n
+> Start string must be matched with Arduino code.\n
+> Println must be added in Arduino code.\n
+> If two or more data(variable) come from Arduino in the same line then println must be added for each variable and then declare "Start string" according to which variable you want to plot in the graph.\n
+Example:\n
+ Serial.print(x:);\n
+//first start string is x:\n
+ Serial.println(sensorValue1);\n
+        delay(50);\n
+ Serial.print(y:);\n
+//Second start string is y:\n
+ Serial.println(sensorValue2);\n
+         delay(50);\n
+
+> If two or more data(variable) come from Arduino in the same line you can plot them at two graph in the second tab(T2).\n
+
+    </string>
+
+
+    <string name="fragment2_instruction">
+> Upto two graph can be plotted here.\n
+> Start string must be matched with Arduino code.\n
+> Two data(variable) must be at the same line ending with println in Arduino code.\n
+Example:\n
+ Serial.print(x:);\n
+//first start string is x:\n
+ Serial.print(sensorValue1);\n
+ Serial.print( y:);\n
+//Second start string is y:\n
+ Serial.println(sensorValue2);\n
+    </string>
+
+
+    <string name="fragment3_instruction">
+> Upto three graph can be plotted here.\n
+> Start string must be matched with Arduino code.\n
+>Three data(variable) must be at the same line ending with println in Arduino code.\n
+Example:\n
+ Serial.print(x:);\n
+//first start string is x:\n
+ Serial.print(sensorValue1);\n
+ Serial.print( y:);\n
+//Second start string is y:\n
+ Serial.print(sensorValue2);\n
+ Serial.print(z:);\n
+//Third start string is z:\n
+ Serial.println(sensorValue3);\n
+
+> You can use any one or two of this among three graph for plotting one or two data by using println.\n
+
+    </string>
+
+    <string name="admob_app_id">ca-app-pub-8266656451477977~7325073671</string>
+    <string name="admob_test_device_samsung_a20">0C847C51FB1BFA39A92C4A8C49E58EF6</string>
+    <string name="admob_banner_one">ca-app-pub-8266656451477977/5078184281</string>
+    <string name="admob_interstitial_one">ca-app-pub-8266656451477977/7617057025</string>
+    <string name="admob_app_open_ad_one">ca-app-pub-8266656451477977/4639200585</string>
+
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_device"
+            android:title="Devices" />
+        <item
+            android:id="@+id/nav_robotcontrol"
+            android:title="Robot control" />
+        <item
+            android:id="@+id/nav_appbuy"
+            android:title="Remove Ads &amp; Convert to Pro" />
+        <item
+            android:id="@+id/nav_privacypolicy"
+            android:title="Privacy policy" />
+        <item
+            android:id="@+id/nav_Recomended_apps"
+            android:title="Recommended Applications" />
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_facebook"
+
+            android:title="Facebook" />
+        <item
+            android:id="@+id/nav_contacts_us"
+            android:title="Contact us" />
+    </group>
+
+    <!--    <item android:title="Communicate">-->
+    <!--        <menu>-->
+
+    <!--        </menu>-->
+    <!--    </item>-->
+</menu>

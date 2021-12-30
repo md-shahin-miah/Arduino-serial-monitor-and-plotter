@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorSecondary">#ED1010</color>
+    <color name="colorMain">#915906</color>
+    <color name="colorPrimaryDark">#03A9F4</color>
+    <color name="colorAccent">#F4E7E7</color>
+    <color name="coloredittextback">#F3F3F3</color>
+    <color name="colorbutton">#005293</color>
+    <color name="textcolorbtc">#683B3B</color>
+    <color name="colorRefresh">#129517</color>
+    <color name="colorExpand">#F4E7E7</color>
+    <color name="colorEditText">#635D5D</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorBlack">#090707</color>
+    <color name="color2nddetails">#A30BA3</color>
+    <color name="editexthints">#848A8A</color>
+    <color name="colorrobotbuttons">#B73D5695</color>
+    <color name="colorrobotbut">#FF6D1F</color>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="100"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/appname_id"
+        android:text="@string/app_name"
+        android:layout_width="0dp"
+        android:layout_weight="80"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_connected_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:background="@drawable/bluetoothgreenlast"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/textVied_search_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bluetoothredlast1"
+            android:layout_alignParentEnd="true"
+            android:minHeight="20dp"
+            android:layout_marginEnd="20dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

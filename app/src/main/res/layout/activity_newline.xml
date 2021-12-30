@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.ardunioSerial.crux.ui.Activity.NewlineActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/Relative_serial_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <RelativeLayout
+            android:id="@+id/relative_release_string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonsettings_text_general_id"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/_10sdp"
+
+            android:background="@drawable/shapebackground3">
+
+            <CheckBox
+                android:id="@+id/checkbox_serial_monitor_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:text="Do you want to add println ?" />
+
+
+            <TextView
+                android:id="@+id/hints_details"
+                android:layout_below="@+id/checkbox_serial_monitor_setting"
+                android:text="If you select this a newline will be added to every sent data."
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+        <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/save_serial_button_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_release_string"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="    save"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            livebutton:backgroundColor="#F57F76"
+            livebutton:corners="6dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="1dp"
+            livebutton:shadowColor="#b16262" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_newline_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        android:visibility="gone"
+        ads:adUnitId="@string/admob_banner_one"
+        />
+    <ImageView
+        android:id="@+id/imageview_Ads_jlcpcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/jlcpcb_banner" />
+
+</RelativeLayout>

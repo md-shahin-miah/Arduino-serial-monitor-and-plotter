@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "39129966070",
+    "firebase_url": "https://arduino-serial-monitor.firebaseio.com",
+    "project_id": "arduino-serial-monitor",
+    "storage_bucket": "arduino-serial-monitor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39129966070:android:99f8c6ff9757420be813d7",
+        "android_client_info": {
+          "package_name": "com.ardunioSerial.crux"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39129966070-ottssoeel9jo2q3du4hrjsvon4mah4tm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaygBujPa04hteUS543XbynV7r-_j4p1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39129966070-ottssoeel9jo2q3du4hrjsvon4mah4tm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

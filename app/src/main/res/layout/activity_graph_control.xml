@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView_graph_control">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:id="@+id/text_ourad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:background="@drawable/shape1"
+                android:text="See More of our Applications"
+                android:textAlignment="center"
+                android:textColor="#F36F65"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_ourad"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/label_lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="3"
+                            android:text="Label: "
+                            android:textColor="#683B3B"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_label_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="  Type label name..." />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/start_String_Lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/label_lin"
+                        android:layout_margin="2dp"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="2.5"
+                            android:text="Start String:"
+                            android:textColor="#683B3B"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/et_start_string_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:hint=" Type string here..." />
+
+                    </LinearLayout>
+
+                    <ru.katso.livebutton.LiveButton xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/save_button_gpc_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/start_String_Lin"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="    save"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_16sdp"
+                        android:textStyle="bold"
+                        livebutton:backgroundColor="#F57F76"
+                        livebutton:normalHeight="4dp"
+                        livebutton:pressedHeight="1dp"
+                        livebutton:shadowColor="#b16262" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textviewinstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text=" Instructions:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textviewinstructiondetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textviewinstruction"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shapebackground"
+                android:padding="@dimen/_10sdp"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <ImageView
+
+                android:id="@+id/imageviw_arduino"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_below="@+id/textviewinstructiondetails"
+                android:src="@drawable/arduinopic" />
+
+
+
+            <TextView
+                android:id="@+id/textviewEG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageviw_arduino"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="Example:"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+<!--            <io.github.kbiakov.codeview.CodeView-->
+<!--                android:id="@+id/code_view"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@+id/textviewEG"-->
+<!--                android:layout_marginTop="-1dp"-->
+<!--                android:layout_marginBottom="50dp"-->
+<!--                android:saveEnabled="true"-->
+<!--                android:visibility="gone" />-->
+            <br.tiagohm.codeview.CodeView
+                android:id="@+id/code_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cv_font_size="14"
+                app:cv_highlight_line_number="36"
+                app:cv_show_line_number="true"
+                app:cv_start_line_number="0"
+                app:cv_wrap_line="true"
+                android:layout_below="@+id/textviewEG"
+                android:layout_marginTop="-1dp"
+                android:layout_marginBottom="50dp"
+                android:saveEnabled="true"
+                android:visibility="gone"
+                app:cv_zoom_enable="true">
+            </br.tiagohm.codeview.CodeView>
+
+            <TextView
+                android:id="@+id/shareText_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageviw_arduino"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:drawableRight="@drawable/ic_baseline_share_24"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_graph_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner_one"/>
+    <ImageView
+        android:id="@+id/imageview_Ads_jlcpcb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/jlcpcb_banner" />
+
+</RelativeLayout>

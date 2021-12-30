@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        tools:text="Device name"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/device_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="dummy mac address"
+        android:textSize="14sp"
+        android:layout_below="@+id/device_name"
+        android:layout_marginLeft="15dp"
+        />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/device_address"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/connectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:layout_below="@+id/device_address"
+            android:text="COnnect"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp"
+            android:layout_alignParentEnd="true"
+
+            android:soundEffectsEnabled="true"
+            android:text="Pair"
+            android:layout_alignParentRight="true" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</RelativeLayout>
